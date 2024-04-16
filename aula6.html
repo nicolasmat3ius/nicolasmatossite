@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de Circuitos com botões</title>
+</head>
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="caderno.html">
+        voltar
+      </a>
+    </div>
+  </nav>
+<body>
+    <h1>Aula de Circuitos com botões</h1>
+    
+    <h2>Introdução</h2>
+    <p>Nesta aula, vamos aprender como controlar um LED utilizando um botão e um Arduino. Este projeto é uma ótima introdução para iniciantes em eletrônica e programação.</p>
+    
+    <h2>Circuito</h2>
+    <h3>Circuito Virtual (Tinkercad)</h3>
+    <img src="https://i.pinimg.com/736x/10/71/43/107143ab3bb066bc1506d2928f29111b.jpg" alt="Circuito Virtual">
+    
+    <h3>Circuito Físico</h3>
+    <img src="https://i.pinimg.com/736x/03/d4/6e/03d46ebcd6cf0158c04377b2fc91b5b1.jpg" alt="Circuito Físico">
+    <h3>video</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bLBSnCt_Mko?si=Ulne0ckSPgcGL0ME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <h3>Circuito Simulado (Falstad)</h3>
+    <li>fechado</li>
+    <img src="https://i.pinimg.com/736x/42/4e/46/424e46efde4e4c885c9afef7d3bef8e4.jpg" alt="Circuito Simulado">
+    <li>aberto</li>
+    <img src="https://i.pinimg.com/736x/67/da/11/67da1163e80a258a7ec92fd39abbb296.jpg" alt="pew">
+    <h2>Código</h2>
+    <h3>Código em Blocos</h3>
+    <img src="https://i.pinimg.com/736x/b4/56/48/b45648ad445b127495a8db08f743ee17.jpg" alt="Código em Blocos">
+    
+    <h3>Código em C#</h3>
+    <pre><code>
+        // Código em C#
+        void setup() {
+            pinMode(2, INPUT);
+            pinMode(13, OUTPUT);
+        }
+        
+        void loop() {
+            if (digitalRead(2) == HIGH) {
+                digitalWrite(13, HIGH);
+            } else {
+                digitalWrite(13, LOW);
+            }
+        }
+    </code></pre>
+    
+    <h2>Explicação</h2>
+    <p>Neste circuito, conectamos um LED a um Arduino. Utilizamos um botão como entrada para o Arduino. Quando o botão é pressionado, o Arduino lê um sinal de entrada alto e acende o LED.</p>
+    
+</body>
+</html>
