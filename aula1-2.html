@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="caderno.html">
+            voltar
+          </a>
+        </div>
+      </nav>
+    
+    <meta charset="UTF-8">
+    <title>Aula de Circuitos Digitais e Introdução a C#</title>
+</head>
+<body>
+    <h1>Circuitos Digitais e Introdução a C#</h1>
+
+    <h2>Circuitos Digitais</h2>
+    <p>Nesta aula, exploramos os fundamentos dos circuitos digitais, incluindo:</p>
+    <ul>
+        <li>Entrada, processamento e saída</li>
+        <h1>Portas lógicas (AND, OR, NOT) e tabelas verdade</h2>
+      
+            <li><h2>porta lógica AND:</h2></li>
+        <img src="https://i.pinimg.com/736x/52/b4/29/52b429f0308198e7c08caabd66e192a4.jpg" alt="PL-AND">
+        <li>video</li>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BgtX4o1Zv0g?si=NmVXpn8AgKofTQif" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <li>sistema em falstad</li>
+        <img src="https://i.pinimg.com/736x/5d/d1/53/5dd153c98291f7a94456e0b59c36e7a5.jpg" alt="PL-ANDFST">
+        <li>tabela verdade</li>
+        <img src="https://i.pinimg.com/736x/a2/58/72/a25872a5b7c39c75515e27c712806aa4.jpg" alt="aaa-">
+
+        <li><h2>porta lógica OR:</h2></li>
+        <img src="https://i.pinimg.com/736x/0f/68/6c/0f686c1f5976cb36a55c186df7d80baa.jpg" alt="PL-OR">
+        <li>video</li>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/7NwXqErLNAQ?si=Mq4nCPrhasoalDSY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <li>sistema em falstad</li>
+        <img src="https://i.pinimg.com/736x/59/ce/13/59ce13d327dc84a9aa40b89a3c140eca.jpg" alt="PL-FST">
+        <li>tabela verdade</li>
+        <li><h2>porta lógica NOT:</h2></li>
+        <img src="https://i.pinimg.com/736x/90/0f/f7/900ff7fcf9e41fc60ed93fd5f0c074ba.jpg" alt="PL-NOT">
+        <li>video</li>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/a5pXDUu94fI?si=7_HWCM1Lo7wrqWEc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <li>sistema em falstad</li>
+        <img src="https://i.pinimg.com/736x/f7/90/90/f79090e74a2f4e966557a85b286bdb37.jpg" alt="PL-FST">
+
+        <li>Circuitos elétricos com chaves, fontes, resistores e LEDs</li>
+        <li>Portas lógicas com IC7408, IC7432, IC7404</li>
+        <li>Equações e diagramas das portas lógicas</li>
+    </ul>
+
+    <h2>Introdução a C#</h2>
+    <p>Nesta parte da aula, demos os primeiros passos na linguagem C#, incluindo a criação de um circuito com LED, resistor, protoboard e Arduino. O código foi dividido em 3 partes:</p>
+    <ol>
+        <li>Declaração de variáveis e constantes</li>
+        <li>Configuração (entradas, saídas, lógica e matemática)</li>
+        <li>Repetições</li>
+    </ol>
+
+    <h3>Código em C#</h3>
+    <pre>
+        /**************************
+        * Edusesc taguatinga     *
+        * professor: wendell     *
+        * Nome: nicolas mateus   *
+        * Itinerário de robotica *
+        * ************************
+        */
+
+        // Declaração de Variáveis e Constantes
+        const int LED = 13;
+
+        // Configurações
+        void setup(){
+            pinMode(LED, OUTPUT);
+        }
+        // Repetições
+        void loop(){
+            digitalWrite (LED, HIGH);
+            delay(1000); // 1 segundo
+
+            digitalWrite (LED, LOW);
+            delay(1000); // 1 segundo
+        }
+    </pre>
+    <footer>
+        <p>Espero que tenha gostado desta aula sobre Circuitos Digitais e Introdução a C#!</p>
+    </footer>
+</body>
+</html>

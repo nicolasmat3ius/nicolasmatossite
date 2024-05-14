@@ -1,0 +1,62 @@
+<nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="caderno.html">
+        voltar
+      </a>
+    </div>
+  </nav>
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <title>Entradas (LDR)</title>
+  </head>
+  <body>
+    <h1>Entradas (LDR)</h1>
+    
+    <p>Este projeto demonstra o uso de uma entrada analógica (LDR) para controlar uma saída digital (LED) em um Arduino. O LDR (Light Dependent Resistor) é um sensor que muda sua resistência de acordo com a quantidade de luz incidente. Neste exemplo, o LED acenderá quando a luz ambiente estiver abaixo de um determinado nível.</p>
+     <li>veja o video a seguir:</li>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/dT2wjlKWq-8?si=qNJRD7AIj3QcymM_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h2>Código Arduino</h2>
+    
+    <pre>
+  /**************************
+   * Edusesc taguatinga     *
+   * professor: wendell     *
+   * Nome: nicolas mateus   *
+   * Itinerário de robotica *
+   * ************************
+   */
+   const int LED = 13;
+   int LDR = A0;
+   void setup() {
+    pinMode (LED,OUTPUT);
+    pinMode (LDR,INPUT);
+    Serial.begin(9600);
+   }
+   void loop () {
+  int luz = analogRead (LDR);
+  if (luz>500){
+    digitalWrite(LED,HIGH);
+  }
+  else {
+    digitalWrite(LED,LOW);
+  }
+   }
+    </pre>
+    
+    <h2>Explicação do código</h2>
+    
+    <ol>
+      <li>O LED é definido como uma saída digital no pino 13 do Arduino.</li>
+      <li>O LDR é definido como uma entrada analógica no pino A0 do Arduino.</li>
+      <li>No <code>setup()</code>, os pinos do LED e do LDR são configurados como saída e entrada, respectivamente. A comunicação serial é iniciada com uma taxa de 9600 bits por segundo.</li>
+      <li>No <code>loop()</code>, o valor analógico do LDR é lido e armazenado na variável <code>luz</code>.</li>
+      <li>Se o valor de <code>luz</code> for maior que 500 (indicando baixa luminosidade), o LED é ligado (HIGH).</li>
+      <li>Caso contrário, o LED é desligado (LOW).</li>
+    </ol>
+     <li>o arduino tem que estar semelhante a isso:</li>
+     <img src="https://i.pinimg.com/474x/37/46/3d/37463d18fbc6010ae3501b1317b2bcc0.jpg" alt="arduinoLDR">
+    <p>Esse código demonstra como usar uma entrada analógica (LDR) para controlar uma saída digital (LED) em um Arduino. O LED acenderá quando a luz ambiente estiver abaixo de um determinado nível, definido pelo valor 500 na comparação <code>luz>500</code>.</p>
+  </body>
+  </html>
+  
